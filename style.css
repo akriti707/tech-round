@@ -128,7 +128,7 @@ h4{
     font-size: 12px;  
 }
 .coming{
-     visibility: hidden;                    /* hidden */
+    visibility: hidden;                    /* hidden */
     display: flex;
     position: absolute;
     top: 30%;

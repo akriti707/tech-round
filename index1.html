@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>web app</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Plan</a></li>
+                   
+                </ul>
+                <img src="img-2.png" alt="profile pic" class="id-img">
+                </div>
+            </nav>
+            <div class="main-content">
+                <div class="col-md-2" id="left-section">
+                    <center><img src="img-2.png" alt="profile pic" class="profile-img"><h6>Sandip Das</h6></center>
+                    <p>Profile</p>
+                    <p>Account</p>
+                    <p>Setting</p>
+                    <p>Help</p>
+                    <p style="margin-bottom: -2px; ">Recommendations</p>
+                    <h4>Feedback</h4>
+                    <h4>My Report</h4>
+                </div>
+                <div class="col-md-10" id="right-section">
+                    <p class="cardsl"> My Learning</p>
+                    <p class="view">My Career</p>
+                    <p class="view">Tools</p>
+                    <p class="view">Resources</p>
+                    <div class="card-container">
+                        <div class="cards">
+                            <div class="card-body">
+                                <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p id="card-p">Heading</p>
+                                <p id="card-des">Description Description</p>
+                            </div>
+                            <div class="card-body">
+                                <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p id="card-p">Heading</p>
+                                <p id="card-des">Description Description</p>
+                            </div>
+                            <div class="card-body">
+                                <iframe src="https://www.youtube.com/embed/_XSjpOQad9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p id="card-p">Heading</p>
+                                <p id="card-des">Description Description</p>
+                            </div>
+                            <div class="card-body">
+                                <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p id="card-p">Heading</p>
+                                <p id="card-des">Description Description</p>
+                            </div>
+                            <div class="card-body">
+                                <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p id="card-p">Heading</p>
+                                <p id="card-des">Description Description</p>
+                            </div>
+                            <div class="card-body">
+                                <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p id="card-p">Heading</p>
+                                <p id="card-des">Description Description</p>
+                            </div>
+                        </div>
+                        <div class="coming">
+                            <h1>...coming soon...</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page2" id="right-section">
+               <center> <p class="cardsl"> My Learning</p>
+                <p class="view">My Career</p>
+                <p class="view">Tools</p>
+                <p class="view">Resources</p></center>
+                <div class="col-md-9">
+                 <div class="card-continer" id="crew">
+                    <div class="card-body" id="cesd">
+                        <iframe width="850px" height="400px" src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p id="card-p">Heading</p>
+                        <p id="card-des">Description Description</p>
+                    </div>  
+                 </div>   
+                </div>
+                <div class="col-md-3">
+                    <h1>gyw</h1>
+                    <h1>gyw</h1>
+                    <h1>gyw</h1>
+                </div>
+            </div>
+        </header>
+
+    </body>
+    <script>
+        document.getElementsByClassName(".cardsl").onclick = function() {myfunc()};
+        document.getElementsByClassName(".view").onclick = function() {sefunc()};
+        document.getElementsByClassName(".card-body").onclick = function() {direct()};
+
+        function myfunc(){
+            document.getElementsByClassName(".cards").style.display = "block";
+            document.getElementsByClassName(".coming").style.display = "none";
+        }
+        function sefunc(){
+            document.getElementsByClassName(".coming").style.display = "block";
+            document.getElementsByClassName(".cards").style.display = "none";
+        }
+        function direct(){
+            document.getElementsByClassName(".page2").style.display = "block";
+            document.getElementsByClassName(".main-content").style.display = "none";
+        }
+    </script>
+</html>

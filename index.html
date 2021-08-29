@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html>
+
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>web app</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        
     </head>
     <body>
+        var storageInfo = null;
+
+        if(navigator.webkitTemporaryStorage) {
+          storageInfo = navigator.webkitTemporaryStorage;
+        } else if(navigator.webkitPersistentStorage) {
+          storageInfo = navigator.webkitPersistentStorage;
+        } else if (window.webkitStorageInfo) {
+          storageInfo = window.webkitStorageInfo;
+        }
+        Same thing with the indexedDB deprecation message
+        
+        var yourDB = null;
+        
+        if(indexedDB) {
+          yourDB = indexedDB;
+        } else if(webkitIndexedDB) {
+          yourDB = webkitIndexedDB;
+        }
+        
+	<form name="form1" id="form1" method="post">
         <header>
             <nav>
                 <div class="nav-bar">
@@ -30,14 +51,24 @@
                     <h4>Feedback</h4>
                     <h4>My Report</h4>
                 </div>
+				
+				<body>
+      
+
+         
+       
+
+      </body>
+	  
                 <div class="col-md-10" id="right-section">
-                    <p class="cardsl"> My Learning</p>
-                    <p class="view">My Career</p>
-                    <p class="view">Tools</p>
-                    <p class="view">Resources</p>
-                    <div class="card-container">
+
+                   <tr><td id="myLearning"> <p class="cardsl" onclick="/*hilightfun1()*/myfunc()"> My Learning </td></tr></p>
+                    <tr><td id="myCareer"><p class="view" onclick="/*hilightfun2()*/sefunc()">My Career</td></tr></p>
+                    <tr><td id="tools"><p class="view" onclick="/*hilightfun3()*/sefunc()">Tools</td></tr></p>
+                    <tr><td id="resources"><p class="view" onclick="/*hilightfun4()*/sefunc()">Resources</td></tr></p>
+                    <tr><td id="myLearning"><div class="card-container">
                         <div class="cards">
-                            <div class="card-body">
+                            <div class="card-body" onclick="direct()">
                                 <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <p id="card-p">Heading</p>
                                 <p id="card-des">Description Description</p>
@@ -74,45 +105,64 @@
                     </div>
                 </div>
             </div>
-            <div class="page2" id="right-section">
-               <center> <p class="cardsl"> My Learning</p>
-                <p class="view">My Career</p>
-                <p class="view">Tools</p>
-                <p class="view">Resources</p></center>
-                <div class="col-md-9">
-                 <div class="card-continer" id="crew">
-                    <div class="card-body" id="cesd">
-                        <iframe width="850px" height="400px" src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p id="card-p">Heading</p>
-                        <p id="card-des">Description Description</p>
-                    </div>  
-                 </div>   
-                </div>
-                <div class="col-md-3">
-                    <h1>gyw</h1>
-                    <h1>gyw</h1>
-                    <h1>gyw</h1>
-                </div>
-            </div>
+            
         </header>
-
+</form>
     </body>
     <script>
-        document.getElementsByClassName(".cardsl").onclick = function() {myfunc()};
-        document.getElementsByClassName(".view").onclick = function() {sefunc()};
-        document.getElementsByClassName(".card-body").onclick = function() {direct()};
+      
 
         function myfunc(){
-            document.getElementsByClassName(".cards").style.display = "block";
-            document.getElementsByClassName(".coming").style.display = "none";
+            document.getElementsByClassName('cards').style.display = "block";
+            document.getElementsByClassName('coming').style.display = "none";
         }
         function sefunc(){
-            document.getElementsByClassName(".coming").style.display = "block";
-            document.getElementsByClassName(".cards").style.display = "none";
+            document.getElementsByClassName('coming').style.display = "block";
+            document.getElementsByClassName('cards').style.display = "none";
         }
         function direct(){
-            document.getElementsByClassName(".page2").style.display = "block";
-            document.getElementsByClassName(".main-content").style.display = "none";
+            document.getElementsByClassName('page2').style.display = "block";
+            document.getElementsByClassName('main-content').style.display = "none";
         }
+		
+		function hilightfun1()
+        {
+           alert("hilightfun1 called");
+		   document.getElementById("myLearning").
+           //form validation that recalls the page showing with supplied inputs. 
+			document.getElementsByClassName(".card").style.display = "block";
+            document.getElementsByClassName(".coming").style.display = "none";		   
+         
+        }
+		
+		function hilightfun2()
+        {
+           alert("hilightfun2 called");
+           //form validation that recalls the page showing with supplied inputs. 
+			document.getElementsByClassName(".card").style.display = "block";
+            document.getElementsByClassName(".coming").style.display = "none";		   
+           
+        }
+		
+		function hilightfun3()
+        {
+           alert("hilightfun3 called");
+           //form validation that recalls the page showing with supplied inputs. 
+			document.getElementsByClassName(".card").style.display = "block";
+            document.getElementsByClassName(".coming").style.display = "none";		   
+          
+        }
+		
+		function hilightfun4()
+        {
+           alert("hilightfun4 called");
+           //form validation that recalls the page showing with supplied inputs. 
+			document.getElementsByClassName(".card").style.display = "block";
+            document.getElementsByClassName(".coming").style.display = "none";		   
+           
+        }
+      
+
     </script>
+   
 </html>
