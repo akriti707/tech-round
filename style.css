@@ -87,7 +87,9 @@ h4{
     text-decoration: none;
     font-weight: bold;
 }
-.page2{display: none;}
+/* page2 hidden */
+
+.page2{display: none;}                            
 .card-container, #crew{
     background-color: rgb(180, 241, 221);
     width: 90%;
@@ -126,7 +128,7 @@ h4{
     font-size: 12px;  
 }
 .coming{
-    visibility: hidden;
+     visibility: hidden;                    /* hidden */
     display: flex;
     position: absolute;
     top: 30%;
