@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+}
+.id-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    float: right;
+    position: absolute;
+    top: 5px;
+    right:15px;
+}
+header nav{
+    height: 50px;
+    background-color: rgba(187, 182, 182, 0.993);
+}
+.nav-bar{
+    /* background-color: rgba(151, 145, 145, 0.993); */
+    position: relative;
+    
+}
+.nav-bar ul{
+    float: right; 
+    max-width: 500px;
+    margin-right: 60px;
+}
+.nav-bar li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px;   
+}
+.nav-bar li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-content{
+    margin: 0px;
+}
+#left-section{
+    background-color: rgba(127, 255, 212, 0.534);
+    height:800px;
+}
+.profile-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-bottom: 5px;  
+}
+
+#left-section p{margin: 20px 0px -10px -10px;
+    background-color: rgb(150, 199, 199);
+    padding: 5px;
+    cursor: pointer;
+    display: block;
+}
+h6{margin-bottom: 20px;}
+h4{
+    background-color: rgb(150, 199, 199);
+    padding: 5px;
+    cursor: pointer;
+    display: block;
+    border-style: none;
+    margin: 20px 0px -5px -10px;
+}
+#right-section{
+    background-color:rgb(248, 240, 240);
+    height: 800px;
+    margin-top: -10px;
+}
+#right-section p{
+    background-color: rgba(72, 240, 240, 0.911);
+    margin: 25px -9px 0px 10px; 
+    padding: 5px;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+    display: inline-block;
+    border-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+.page2{display: none;}
+.card-container, #crew{
+    background-color: rgb(180, 241, 221);
+    width: 90%;
+    height: 748px;
+    margin-left: 10px;
+    
+}
+.cards{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;   
+    
+}
+.card-body{
+    min-height: 200px;
+    min-width: 300px;
+    margin-top: 3%;
+    border: 1px solid red;
+    box-shadow: 2px 4px 4px 4px lightgray;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color:rgb(248, 240, 240)
+}
+.card-body #card-p{
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    display: block;
+    font-size: 16px;
+}
+.card-body #card-des{
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    display: inline-block;
+    font-size: 12px;  
+}
+.coming{
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.page2 #cesd{
+    margin: 20px;
+    height: 500px;
+    width: 850px;
+}
