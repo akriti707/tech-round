@@ -46,7 +46,7 @@ header nav{
 }
 #left-section{
     background-color: rgba(127, 255, 212, 0.534);
-    height:650px;
+    height:750px;
 }
 .profile-img{
     height: 80px;
@@ -73,7 +73,7 @@ h4{
 }
 #right-section{
     background-color:rgb(248, 240, 240);
-    height: 500px;
+    height: 750px;
     margin-top: -10px;
 }
 #right-section a,.page2 a{
@@ -100,7 +100,7 @@ h4{
 .card-container{
     background-color: rgb(180, 241, 221);
     width: 90%;
-    height: 600px;
+    height: 700px;
     margin-left: 10px;
     
 }
