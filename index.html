@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=2">
         <title>web app</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -9,20 +9,20 @@
        
         <script>
       
-            $(".cardsl").click(function(){
+            $(".cards1").click(function(){
                 debugger
-                $("#cards").css("display","block");
-                $("#coming").css("display","none");
+                $("#cards").css("visibility","visible");
+                $("#coming").css("visibility","hidden");
             });
             $(".view").click(function(){
                 debugger
-                $("#coming").css("display","block");
-                $("#cards").css("display","none");
+                $("#coming").css("visibility","visible");
+                $("#cards").css("visibility","hidden");
             });
             $(".card-p").click(function(){
                 debugger
-                $("#page2-right-section").css("display","block");
-                $(".main-content").css("display","none");
+                $("#page2-right-section").css("visibility","visible");
+                $(".main-content").css("visibility","hidden");
             });
         </script>
     </head>
@@ -51,7 +51,7 @@
                     <h4>My Report</h4>
                 </div>
                 <div class="col-md-10" id="right-section">
-                    <a href="#cards" class="cardsl"> My Learning</a>
+                    <a href="#cards" class="cards1"> My Learning</a>
                     <a href="#coming" target="#container" class="view">My Career</a>
                     <a href="#coming" target="#container" class="view">Tools</a>
                     <a href="#coming" target="#container" class="view">Resources</a>
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="page2" id="page2-right-section">
-               <center><a href="#cards" class="cardsl"> My Learning</a>
+               <center><a href="#cards" class="cards1"> My Learning</a>
                 <a href="#coming" target="#container" class="view">My Career</a>
                 <a href="#coming" target="#container" class="view">Tools</a>
                 <a href="#coming" target="#container" class="view">Resources</a>

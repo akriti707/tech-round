@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+   
 }
 body{
     font-size: 20px;
@@ -41,11 +42,11 @@ header nav{
 }
 .main-content{
     margin: 0px;
-    display: block;
+    visibility: visible;
 }
 #left-section{
     background-color: rgba(127, 255, 212, 0.534);
-    height:800px;
+    height:650px;
 }
 .profile-img{
     height: 80px;
@@ -59,7 +60,7 @@ header nav{
     background-color: rgb(150, 199, 199);
     padding: 5px;
     cursor: pointer;
-    display: block;
+    visibility: visible;
 }
 h6{margin-bottom: 20px;}
 h4{
@@ -72,7 +73,7 @@ h4{
 }
 #right-section{
     background-color:rgb(248, 240, 240);
-    height: 800px;
+    height: 500px;
     margin-top: -10px;
 }
 #right-section a,.page2 a{
@@ -90,16 +91,16 @@ h4{
 }
 /* page2 hidden */
 
-.page2{
+#page2-right-section{
     position: absolute;
     top: 40px;
-    visibility: hidden;
+   visibility: hidden;
     
 }                            
 .card-container{
     background-color: rgb(180, 241, 221);
     width: 90%;
-    height: 748px;
+    height: 600px;
     margin-left: 10px;
     
 }
@@ -143,7 +144,7 @@ h4{
     font-size: 12px;  
 }
 .coming{
-    visibility: collapse;                    /* hidden */
+    visibility: hidden;                   /* hidden */
     display: flex;
     position: absolute;
     top: 30%;
