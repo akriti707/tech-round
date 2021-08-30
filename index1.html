@@ -5,6 +5,26 @@
         <title>web app</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+       
+        <script>
+      
+            $(".cardsl").click(function(){
+                debugger
+                $("#cards").show();
+                $("#coming").hide();
+            });
+            $(".view").click(function(){
+                debugger
+                $("#coming").show();
+                $("#cards").hide();
+            });
+            $(".card-p").click(function(){
+                debugger
+                $("#page2-right-section").show();
+                $(".main-content").hide();
+            });
+        </script>
     </head>
     <body>
         <header>
@@ -44,27 +64,27 @@
                             </div>
                             <div class="card-body">
                                 <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <p id="card-p">Heading</p>
+                                <a id="card-p" href="#page2-right-section">Heading</a>
                                 <p id="card-des">Description Description</p>
                             </div>
                             <div class="card-body">
                                 <iframe src="https://www.youtube.com/embed/_XSjpOQad9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <p id="card-p">Heading</p>
+                                <a id="card-p" href="#page2-right-section">Heading</a>
                                 <p id="card-des">Description Description</p>
                             </div>
                             <div class="card-body">
                                 <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <p id="card-p">Heading</p>
+                                <a id="card-p" href="#page2-right-section">Heading</a>
                                 <p id="card-des">Description Description</p>
                             </div>
                             <div class="card-body">
                                 <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <p id="card-p">Heading</p>
+                                <a id="card-p" href="#page2-right-section">Heading</a>
                                 <p id="card-des">Description Description</p>
                             </div>
                             <div class="card-body">
                                 <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <p id="card-p">Heading</p>
+                                <a id="card-p" href="#page2-right-section">Heading</a>
                                 <p id="card-des">Description Description</p>
                             </div>
                         </div>
@@ -97,7 +117,7 @@
         </header>
 
     </body>
-    <script>
+    <!-- <script>
         document.getElementsByClassName(".cardsl").onclick = function() {myfunc()};
         document.getElementsByClassName(".view").onclick = function() {sefunc()};
         document.getElementsByClassName(".card-body").onclick = function() {direct()};
@@ -114,5 +134,5 @@
             document.getElementsByClassName(".page2").style.display = "block";
             document.getElementsByClassName(".main-content").style.display = "none";
         }
-    </script>
+    </script> -->
 </html>
