@@ -8,25 +8,7 @@
         
     </head>
     <body>
-        var storageInfo = null;
-
-        if(navigator.webkitTemporaryStorage) {
-          storageInfo = navigator.webkitTemporaryStorage;
-        } else if(navigator.webkitPersistentStorage) {
-          storageInfo = navigator.webkitPersistentStorage;
-        } else if (window.webkitStorageInfo) {
-          storageInfo = window.webkitStorageInfo;
-        }
-        Same thing with the indexedDB deprecation message
-        
-        var yourDB = null;
-        
-        if(indexedDB) {
-          yourDB = indexedDB;
-        } else if(webkitIndexedDB) {
-          yourDB = webkitIndexedDB;
-        }
-        
+                
 	<form name="form1" id="form1" method="post">
         <header>
             <nav>
@@ -52,20 +34,14 @@
                     <h4>My Report</h4>
                 </div>
 				
-				<body>
-      
-
-         
-       
-
-      </body>
+				
 	  
-                <div class="col-md-10" id="right-section">
+                <section class="col-md-10" id="right-section">
 
-                   <tr><td id="myLearning"> <p class="cardsl" onclick="/*hilightfun1()*/myfunc()"> My Learning </td></tr></p>
-                    <tr><td id="myCareer"><p class="view" onclick="/*hilightfun2()*/sefunc()">My Career</td></tr></p>
-                    <tr><td id="tools"><p class="view" onclick="/*hilightfun3()*/sefunc()">Tools</td></tr></p>
-                    <tr><td id="resources"><p class="view" onclick="/*hilightfun4()*/sefunc()">Resources</td></tr></p>
+                   <tr><td id="myLearning"> <p class="cardsl" onclick="myfunc()"> My Learning </p></td></tr>
+                    <tr><td id="myCareer"><p class="view" onclick="myfunc()">My Career</p></td></tr>
+                    <tr><td id="tools"><p class="view" onclick="myfunc()">Tools</p></td></tr>
+                    <tr><td id="resources"><p class="view" onclick="myfunc()">Resources</p></td></tr>
                     <tr><td id="myLearning"><div class="card-container">
                         <div class="cards">
                             <div class="card-body" onclick="direct()">
@@ -102,10 +78,7 @@
                         <div class="coming">
                             <h1>...coming soon...</h1>
                         </div>
-                    </div>
-                </div>
-            </div>
-            
+                 </section>   
         </header>
 </form>
     </body>
@@ -123,45 +96,7 @@
         function direct(){
             document.getElementsByClassName('page2').style.display = "block";
             document.getElementsByClassName('main-content').style.display = "none";
-        }
-		
-		function hilightfun1()
-        {
-           alert("hilightfun1 called");
-		   document.getElementById("myLearning").
-           //form validation that recalls the page showing with supplied inputs. 
-			document.getElementsByClassName(".card").style.display = "block";
-            document.getElementsByClassName(".coming").style.display = "none";		   
-         
-        }
-		
-		function hilightfun2()
-        {
-           alert("hilightfun2 called");
-           //form validation that recalls the page showing with supplied inputs. 
-			document.getElementsByClassName(".card").style.display = "block";
-            document.getElementsByClassName(".coming").style.display = "none";		   
-           
-        }
-		
-		function hilightfun3()
-        {
-           alert("hilightfun3 called");
-           //form validation that recalls the page showing with supplied inputs. 
-			document.getElementsByClassName(".card").style.display = "block";
-            document.getElementsByClassName(".coming").style.display = "none";		   
-          
-        }
-		
-		function hilightfun4()
-        {
-           alert("hilightfun4 called");
-           //form validation that recalls the page showing with supplied inputs. 
-			document.getElementsByClassName(".card").style.display = "block";
-            document.getElementsByClassName(".coming").style.display = "none";		   
-           
-        }
-      
+        }     
 
     </script>
    
