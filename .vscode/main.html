@@ -1,3 +1,5 @@
+<!-- in this page error is occuring that's why i created 3 different pages, i wil solve this issue very soon. -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,24 +9,24 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
        
-        <!-- <script>
+        <script>
       
             $(".cards1").click(function(){
                 debugger
                 $("#cards").css("visibility","visible");
-                $("#coming").css("visibility","visible");
+                $("#coming").css("visibility","hidden");
             });
             $(".view").click(function(){
                 debugger
                 $("#coming").css("visibility","visible");
-                $("#cards").css("visibility","visible");
+                $("#cards").css("visibility","hidden");
             });
             $(".card-p").click(function(){
                 debugger
                 $("#page2-right-section").css("visibility","visible");
-                $(".main-content").css("visibility","visible");
+                $(".main-content").css("visibility","hidden");
             });
-        </script> -->
+        </script>
     </head>
     <body>
         <header>
@@ -51,49 +53,88 @@
                     <h4>My Report</h4>
                 </div>
                 <div class="col-md-10" id="right-section">
-                    <a href="./index.html" class="cards1"> My Learning</a>
-                    <a href="./page3.html" target="#container" class="view">My Career</a>
-                    <a href="./page3.html" target="#container" class="view">Tools</a>
-                    <a href="./page3.html" target="#container" class="view">Resources</a>
+                    <a href="#cards" class="cards1"> My Learning</a>
+                    <a href="#coming" target="#container" class="view">My Career</a>
+                    <a href="#coming" target="#container" class="view">Tools</a>
+                    <a href="#coming" target="#container" class="view">Resources</a>
                     <div class="card-container" id="container">
                         <div class="cards" id="cards">
                             <div class="card-body">
                                 <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <a id="card-p" href="./page2.html">Heading</a>
+                                <a id="card-p" href="#page2-right-section">Heading</a>
                                 <p id="card-des">Description Description</p>
                             </div>
                             <div class="card-body">
                                 <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <a id="card-p" href="./page2.html">Heading</a>
+                                <a id="card-p" href="#page2-right-section">Heading</a>
                                 <p id="card-des">Description Description</p>
                             </div>
                             <div class="card-body">
                                 <iframe src="https://www.youtube.com/embed/_XSjpOQad9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <a id="card-p" href="./page2.html">Heading</a>
+                                <a id="card-p" href="#page2-right-section">Heading</a>
                                 <p id="card-des">Description Description</p>
                             </div>
                             <div class="card-body">
                                 <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <a id="card-p" href="./page2.html">Heading</a>
+                                <a id="card-p" href="#page2-right-section">Heading</a>
                                 <p id="card-des">Description Description</p>
                             </div>
                             <div class="card-body">
                                 <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <a id="card-p" href="./page2.html">Heading</a>
+                                <a id="card-p" href="#page2-right-section">Heading</a>
                                 <p id="card-des">Description Description</p>
                             </div>
                             <div class="card-body">
                                 <iframe src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <a id="card-p" href="./page2.html">Heading</a>
+                                <a id="card-p" href="#page2-right-section">Heading</a>
                                 <p id="card-des">Description Description</p>
                             </div>
                         </div>
-                        
+                        <div class="coming" id="coming">
+                            <h1>...coming soon...</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-           
+            <div class="page2" id="page2-right-section">
+               <center><a href="#cards" class="cards1"> My Learning</a>
+                <a href="#coming" target="#container" class="view">My Career</a>
+                <a href="#coming" target="#container" class="view">Tools</a>
+                <a href="#coming" target="#container" class="view">Resources</a>
+                </center>
+                <div class="col-md-9">
+                 <div class="card-continer" id="crew">
+                    <div class="card-body" id="cesd">
+                        <iframe width="800px" height="400px" src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p id="card-p">Heading</p>
+                        <p id="card-des">Description Description</p>
+                    </div>  
+                 </div>   
+                </div>
+                <div class="col-md-3">
+                    <h1>gyw</h1>
+                    <h2>hjhd</h2>
+                    <h3>wgdy</h3>
+                </div>
+            </div>
         </header>
 
     </body>
+    <!-- <script>
+        document.getElementsByClassName(".cardsl").onclick = function() {myfunc()};
+        document.getElementsByClassName(".view").onclick = function() {sefunc()};
+        document.getElementsByClassName(".card-body").onclick = function() {direct()};
+        function myfunc(){
+            document.getElementsByClassName(".cards").style.display = "block";
+            document.getElementsByClassName(".coming").style.display = "none";
+        }
+        function sefunc(){
+            document.getElementsByClassName(".coming").style.display = "block";
+            document.getElementsByClassName(".cards").style.display = "none";
+        }
+        function direct(){
+            document.getElementsByClassName(".page2").style.display = "block";
+            document.getElementsByClassName(".main-content").style.display = "none";
+        }
+    </script> -->
 </html>

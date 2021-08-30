@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=2">
+        <title>web app</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+       
+        <!-- <script>
+      
+            $(".cards1").click(function(){
+                debugger
+                $("#cards").css("visibility","visible");
+                $("#coming").css("visibility","visible");
+            });
+            $(".view").click(function(){
+                debugger
+                $("#coming").css("visibility","visible");
+                $("#cards").css("visibility","visible");
+            });
+            $(".card-p").click(function(){
+                debugger
+                $("#page2-right-section").css("visibility","visible");
+                $(".main-content").css("visibility","visible");
+            });
+        </script> -->
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Plan</a></li>
+                   
+                </ul>
+                <img src="img-2.png" alt="profile pic" class="id-img">
+                </div>
+            </nav>
+            <div class="main-content">
+                <div class="col-md-2" id="left-section">
+                    <center><img src="img-2.png" alt="profile pic" class="profile-img"><h6>Sandip Das</h6></center>
+                    <p>Profile</p>
+                    <p>Account</p>
+                    <p>Setting</p>
+                    <p>Help</p>
+                    <p style="margin-bottom: -2px; ">Recommendations</p>
+                    <h4>Feedback</h4>
+                    <h4>My Report</h4>
+                </div>
+                <div class="col-md-10" id="right-section">
+                    <a href="./index.html" class="cards1"> My Learning</a>
+                    <a href="#coming" target="#container" class="view">My Career</a>
+                    <a href="#coming" target="#container" class="view">Tools</a>
+                    <a href="#coming" target="#container" class="view">Resources</a>
+                    <div class="card-container" id="container">
+                        <div class="coming" id="coming">
+                            <h1>...coming soon...</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+        </header>
+
+    </body>
+    </html>
