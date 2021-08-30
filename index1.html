@@ -11,18 +11,18 @@
       
             $(".cardsl").click(function(){
                 debugger
-                $("#cards").show();
-                $("#coming").hide();
+                $("#cards").css("display","block");
+                $("#coming").css("display","none");
             });
             $(".view").click(function(){
                 debugger
-                $("#coming").show();
-                $("#cards").hide();
+                $("#coming").css("display","block");
+                $("#cards").css("display","none");
             });
             $(".card-p").click(function(){
                 debugger
-                $("#page2-right-section").show();
-                $(".main-content").hide();
+                $("#page2-right-section").css("display","block");
+                $(".main-content").css("display","none");
             });
         </script>
     </head>
@@ -95,14 +95,15 @@
                 </div>
             </div>
             <div class="page2" id="page2-right-section">
-               <center> <p class="cardsl"> My Learning</p>
-                <p class="view">My Career</p>
-                <p class="view">Tools</p>
-                <p class="view">Resources</p></center>
+               <center><a href="#cards" class="cardsl"> My Learning</a>
+                <a href="#coming" target="#container" class="view">My Career</a>
+                <a href="#coming" target="#container" class="view">Tools</a>
+                <a href="#coming" target="#container" class="view">Resources</a>
+                </center>
                 <div class="col-md-9">
                  <div class="card-continer" id="crew">
                     <div class="card-body" id="cesd">
-                        <iframe width="850px" height="400px" src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="800px" height="400px" src="https://www.youtube.com/embed/OCeqeJi_jYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p id="card-p">Heading</p>
                         <p id="card-des">Description Description</p>
                     </div>  
@@ -110,8 +111,8 @@
                 </div>
                 <div class="col-md-3">
                     <h1>gyw</h1>
-                    <h1>gyw</h1>
-                    <h1>gyw</h1>
+                    <h2>hjhd</h2>
+                    <h3>wgdy</h3>
                 </div>
             </div>
         </header>
